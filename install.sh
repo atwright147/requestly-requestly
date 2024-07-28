@@ -5,13 +5,13 @@
 set -e
 
 rm -rf node_modules
-npm install
+npm ci
 
 echo -e "\n***** Installing React app dependencies *****"
 # Install dependencies for react app
 cd app
 rm -rf node_modules
-npm install
+npm ci
 cd ..
 
 echo -e "\n***** Installing Browser Extension dependencies *****"
@@ -23,7 +23,7 @@ cd ..
 echo -e "\n***** Installing rule-processor dependencies *****"
 cd common/rule-processor
 rm -rf node_modules
-npm install
+npm ci
 cd ../..
 
 echo -e "\n***** Requestly install complete *****"
